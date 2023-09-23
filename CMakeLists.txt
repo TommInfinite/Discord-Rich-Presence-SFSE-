@@ -5,8 +5,8 @@ message("Using toolchain file ${CMAKE_TOOLCHAIN_FILE}.")
 ## Define project
 ########################################################################################################################
 project(
-  PluginName
-  VERSION 0.0.1
+  DiscordPresence
+  VERSION 1.0.0
   LANGUAGES CXX
 )
 set(CMAKE_CXX_STANDARD 23)
@@ -50,7 +50,7 @@ find_package(CommonLibSF CONFIG REQUIRED)
 
 add_commonlibsf_plugin(
   ${PROJECT_NAME}
-  AUTHOR AuthorName
+  AUTHOR TommInfinite
   SOURCES ${headers} ${sources}
 )
 
